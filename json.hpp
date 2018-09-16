@@ -25,7 +25,6 @@ public:
 			}
 			count++;
 		}
-		std::cout << str << std::endl;
 		Json json1(str);
 		return json1;
 	}
