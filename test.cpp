@@ -1,6 +1,3 @@
-#include <any>
-#include <string>
-
 #include <gtest/gtest.h>
 #include "json.hpp"
 
@@ -22,7 +19,7 @@ std::string json_data = R"(
 })";
 
 TEST(Json, LoadFromString) {
-  Json object(json_data);
+  Json object = Json::parse(json_data);
   EXPECT_EQ(std::any_cast<std::string>(object["lastname"]), "Ivanov");
   EXPECT_EQ(std::any_cast<bool>(object["islegal"]), false);
   EXPECT_EQ(std::any_cast<double>(object["age"]), 25);
