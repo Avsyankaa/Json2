@@ -25,5 +25,5 @@ install:
 script:
   - mkdir --parents ../builds
   - cd ../builds
-  - cmake -DCMAKE_BUILD_TYPE=Release ../builds
+  - cmake -DCMAKE_BUILD_TYPE=Release ../Json2
   - cmake --build .
