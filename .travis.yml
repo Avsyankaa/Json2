@@ -23,6 +23,7 @@ install:
   - eval "CC=/usr/bin/gcc && CXX=/usr/bin/g++"
 
 script:
-  - mkdir build && cd build
-  - cmake -DCMAKE_BUILD_TYPE=Release ../
+  - mkdir --parents ../builds
+  - cd ../builds
+  - cmake -DCMAKE_BUILD_TYPE=Release ../builds
   - cmake --build .
