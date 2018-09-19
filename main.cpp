@@ -1,8 +1,7 @@
 #include <gtest/gtest.h>
 #include "json.hpp"
 
-namespace {
-
+int main() {
 const char * const json_data = R"(
 {
     "lastname" : "Ivanov",
@@ -17,9 +16,5 @@ const char * const json_data = R"(
         "street" : "Vozdvijenka"
     }
 })";
-
-int main() {
   Json object = Json::parse(json_data);
-    }
- 
 }  // namespace
