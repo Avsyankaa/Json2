@@ -18,7 +18,8 @@ const char * const json_data = R"(
     }
 })";
 
-
+int main() {
   Json object = Json::parse(json_data);
+    }
  
 }  // namespace
