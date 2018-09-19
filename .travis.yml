@@ -23,5 +23,5 @@ install:
   - eval "CC=/usr/bin/gcc && CXX=/usr/bin/g++"
 
 script:
-  - cmake -DCMAKE_BUILD_TYPE=Release Json2
+  - cmake -DCMAKE_BUILD_TYPE=Release 
   - cmake --build .
